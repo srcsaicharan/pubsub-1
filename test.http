@@ -1,0 +1,28 @@
+### Get service metadata
+GET http://localhost:4004/odata/v4/PubSubService/$metadata
+Accept: application/xml
+
+
+### Test CAP action - publish message to Solace
+POST http://localhost:4004/odata/v4/pub-sub/publishMessage
+Content-Type: application/json
+
+{
+  "id": 101,
+  "name": "Sai"
+}
+
+
+### Send another message
+POST http://localhost:4004/odata/v4/PubSubService/publishMessage
+Content-Type: application/json
+
+{
+  "id": 202,
+  "name": "Hello Solace"
+}
+
+
+### Check service root
+GET http://localhost:4004/odata/v4/PubSubService
+Accept: application/json
