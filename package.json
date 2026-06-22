@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "dependencies": {
     "@sap/cds": "^9",
+    "@sap/xsenv": "^6.2.1",
+    "@sap/xssec": "^4.13.0",
+    "passport": "^0.7.0",
     "solclientjs": "^10.18.3"
   },
   "devDependencies": {
