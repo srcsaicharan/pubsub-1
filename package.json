@@ -6,7 +6,8 @@
     "solclientjs": "^10.18.3"
   },
   "devDependencies": {
-    "@cap-js/sqlite": "^2.4"
+    "@cap-js/sqlite": "^2.4",
+    "@sap/cds-dk": "^9"
   },
   "scripts": {
     "start": "cds-serve"
